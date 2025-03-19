@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/4600a0b793.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+</head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html"><img class="logo" src="images/logo.png" alt="Logo"></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="work.html">Work Experience</a></li>
+                    <li><a href="hackathon.html">Hackathon</a></li>
+                    <li><a href="library.html">eLibrary</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-text">
+                <p> Home </p>
+                <h1> I am <span>Pranay Aggarwal</span> <br> <span>Student</span> IIT, Madras </h1> 
+                <a href="#contact" class="btn btn2 btn3">Contact Me</a>   
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div id="particles-js" style="color: #fff;"></div>
+
+
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpeg" alt="About">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me </h1>
+                    <p> I am a first year Bsc Data Science and Applications student at Indian Institute of Technology, Madras. 
+                        <br> I am experienced in data analysis and I have actively participated in numerous datathons to both hone and exhibit my prowess in the field.
+                        Alongside, I've undertaken several personal projects, showcasing my ability to apply analytical techniques effectively.
+                        <br> I believe that a well-rounded proficiency in these areas is essential for excelling in leadership roles.
+                        I have also worked with various student led and student driven organizations to better serve the community. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('test results')">Test Results</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>IBM Qiskit Quantum</span> <br> Completed IBM Qiskit Summer School 2024 with excellence</li>
+                            <li><span>AWS Cloud Computing</span> <br> Certified in cloud computing by Amazon Web Services</li>
+                            <li><span>Business Analyst</span> <br> Certified by IIBA, PMI and NASBA</li>
+                            <li><span>Software and Web Development</span> <br> Proficient in Python, Java, HTML, CSS, JS, etc</li>
+                            <li><span>Data Analysis</span> <br> Proficient in Power BI, DAX, MS Excel, R, SQL</li>
+                            <li><a href="skills.html" class="btn-s">View All</a></li>
+                        </ul>
+                        
+                    </div>
+
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UBC Jumpstart, Orientation Leader</span> 
+                                <br> Aug 2023 - Sep 2023
+                                <br> Worked with incoming batch of students and managed a group of 30,<br> helping them navigate their journey at UBC.
+                            </li>
+                            <li><span>VP Marketing, UBC Quantum</span> 
+                                <br> Feb 2023 - Sep 2024
+                                <br> Successfully promoted club events and bringing more engagements.<br> Increasing social media engagement by 150%.
+                            </li>
+                            <li><span>VP Outreach, UBC Astronomy</span> 
+                                <br> Mar 2023 - Sep 2023
+                                <br>Brokered collaboration with different organizations and clubs and <br> organized various events. 
+                            <li>
+                            <li><a href="work.html" class="btn-s">View All</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Indian Institute of Technology, Madras</span> <br> 2024 - present <br> BSc, Data Science and Applications; CGPA: 9.0</li>
+                            <li><span>University of Delhi, SOL</span> <br> 2024 - present <br> BA, Computer Applications; First Year: TBA</li>
+                            <li><span>University of British Columbia, Vancouver</span> <br> 2022 - 2023 <br> BSc, Statistics; First Year: 82.2%</li>
+                            <li><span>Delhi Public School, Mathura Road</span> <br> 2008 - 2022 <br> Science Stream; Final Year: 94%</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="test results">
+                        <ul>
+                            <li><span>Tests and Exams</span> <br> <b>SAT:</b> 1450 
+                                                             <br> <b>IELTS:</b> 8/9  
+                                                             <br> <b>DELF A1:</b> 92.5%</li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services </h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2> Software and Web Development </h2>
+                    <p> Designing Web Applications, Software, DBMS, Cloud and Machine Learning</p>
+                    <a href="#" id="one">Read More</a> 
+                </div>
+
+
+                <div>
+                    <i class="fa-solid fa-briefcase"></i>
+                    <h2> Business Management</h2>
+                    <p> Business Analysis, Marketing and Administration </p>
+                    <a href="#" id="two">Read More</a> 
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h2> Data Science </h2>
+                    <p> Applications of Statistics, Data Analysis and Data Visualization-Power BI</p>
+                    <a href="#" id="three">Read More</a> 
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-one" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2> <i class="fa-solid fa-code"></i> Software and Web Development</h2>
+          <p><ul>
+            <li> Experienced Frontend Web Developer- HTML, CSS, JS</li>
+            <li> Software and Backend Development with integration of web APIs - Python and Java  </li>
+            <li> AWS certified Cloud Engineer and Database Management using SQL</li>
+            <li> Proficient with Qiskit Library and IBM Quantum computing tools</li>
+            <li> Machine Learning and AI using mathematical modelling </li>
+            <li> Prompt Engineering - Chat GPT, MidJourney </li>
+            <li> Learning MERN stack</li>
+            <ul></p>
+        </div>
+    </div>
+    <div id="modal-two" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2><i class="fa-solid fa-briefcase"></i> Business Management</h2>
+          <p><ul>
+            <li> IIBA, PMI and NASBA Certified Business Analyst - Business Case and Benefits Realization</li>
+            <li> Digital Marketing and SEO optimization - Meta Ads and Google AdSense</li>
+            <li> Social Media Marketing: Graphic Designing and Content Creation</li>
+            <li> Leadership and Management - Administration and Team Building</li>
+          </ul></p>
+        </div>
+    </div>
+    <div id="modal-three" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2> <i class="fa-solid fa-chart-simple"></i> Data Science</h2>
+            <p><ul>
+            <li> Complex Mathematical and Statistical model building and analysis - ANOVA, Pearson analysis, classification, regression</li>
+            <li> Data Visualization and Dashboarding - Power BI, DAX, MS Excel</li>
+            <li> Data processing using R, Python libraries</li>
+        <ul></p>
+        </div>
+    </div>
+      
+      
+      
+
+    
+
+
+
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/app-icon/spotify.png">
+                    <div class="layer">
+                        <h3>Spotify Ads Free</h3>
+                        <p>Offline solution to Spotify problem</p>
+                        <a href = "https://github.com/pranay-aggarwal/Spotify-Ad-Free"> <i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/app-icon/chat sync.png">
+                    <div class="layer">
+                        <h3>ChatSync</h3>
+                        <p>Your AI Chat Replacement and Companion</p>
+                        <a href = "https://github.com/pranay-aggarwal/ChatSync"> <i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/app-icon/dinner choice.png">
+                    <div class="layer">
+                        <h3>Dinner Choice</h3>
+                        <p>Discover Dinner Choice: Your Culinary Solution.</p>
+                        <a href = "https://dinnerchoice.netlify.app/"> <i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="projects.html" class="btn">View All</a>
+        </div>
+    </div>
+
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> pranayaggarwal260604@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/pranay-aggarwal26/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/pranay-aggarwal"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://leetcode.com/u/pranay-aggarwal/"><i class="fa-solid fa-terminal"></i></a>
+                    </div>
+                    <a href="books/cv.pdf" class="btn btn2"> Download CV </a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p> © Developed by Pranay Aggarwal</p>
+    </div>
+
+    <script type="text/javascript" src="libraries/particles.js"></script>
+    <script type="text/javascript" src="libraries/app.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="script_popup.js"></script>
+    <script type="text/javascript" src="script_contactform.js"></script>  
+
+
+</body>
+</html>

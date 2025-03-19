@@ -1,0 +1,106 @@
+.title {
+    background-color: black;
+    padding: 1px;
+    text-align: left; 
+}
+
+.badge-container {
+    background-color: rgba(0, 0, 0);
+    border: 5px solid black;
+    margin: 50px auto;
+    width: 1000px;
+    padding: 20px;
+    text-align: left;
+    overflow-x: auto;
+    border-radius: 25px;
+    
+}
+
+.title h2{
+    margin-bottom: 10px;
+    color: #00a6fb;
+}
+
+.badges {
+    display: flex;
+    justify-content: left;
+    white-space: nowrap; 
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+.badges::-webkit-scrollbar {
+    width: 5px;
+    height: 10px; 
+}
+
+.badges::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px; 
+}
+
+.badge {
+    margin: 10px 10px; 
+    text-align: center; 
+    transition: filter 0.3s, box-shadow 0.3s;
+}
+
+.badge img:hover {
+    filter: brightness(1.2); 
+    box-shadow: 0 0 10px #00a6fb;
+}
+
+.badge img {
+    margin-top: 5px;
+    max-width: 150px;;
+    border: 3px solid #00a6fb;
+}
+
+.badge p {
+    text-align: left;
+    font-size: 14px;
+    margin-top: 10px;
+
+}
+
+
+#languages{
+    padding: 10px 0;
+}
+
+.lang-box{
+    padding: 10px 10%;
+}
+
+.lang-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 30px;
+    margin-top: 50px;
+}
+
+.lang-list div{
+    background: #262626;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.lang-list div img{
+    width: 30px;
+    margin-bottom: 20px;
+}
+
+.lang-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+
+.lang-list div:hover{
+    color: #00a6fb;
+    transform: translateY(-10px);
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style_library.css">
+    <script src="https://kit.fontawesome.com/4600a0b793.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html"><img class="logo" src="images/logo.png" alt="Logo"></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#" onclick="filterBooks('all')">All</a></li>
+                    <li><a href="#" onclick="filterBooks('programming')">Programming</a></li>
+                    <li><a href="#" onclick="filterBooks('space')">Space</a></li>
+                    <li><a href="#" onclick="filterBooks('research')">Published Articles</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-text">
+                <p> Pranay Aggarwal </p>
+                <h1> My <span>Published Articles</span> and <br> <span>eBooks</span> </h1>    
+            </div>
+        </div>
+    </div>
+
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search eBooks">
+    </div>
+    <div class="container">
+        <div class="ebook programming">
+            <div class="image-container">
+                <a href="books/Python Programming_ A Comprehensive Guide for Beginners in Python and Data Analysis.pdf" target="_blank">
+                <img src="images/book-folder/python programming.png" alt="Python Programming"></a>
+            </div>
+            <div class="info">
+                <h1>Python Programming</h1>
+                <h2>A comprehensive guide for beginners in Python and data analysis.</h2>
+                <p>Learn Python from scratch, and start developing your very own programs in no time!!</p>
+            </div>
+        </div>
+
+        <div class="ebook programming">
+            <div class="image-container">
+                <a href="books/HTML Mastery_ A Beginner's Guide to Web Development.pdf" target="_blank"> 
+                    <img src="images/book-folder/html mastery.jpg" alt="HTML Mastery"></a>
+            </div>
+            <div class="info">
+                <h1>HTML Mastery</h1>
+                <h2>A beginner's guide to web development with HTML.</h2>
+                <p>Become a master in HTML, and begin your journey to become a web wizard!!</p>
+            </div>
+        </div>
+
+        <div class="ebook space">
+            <div class="image-container">
+                <a href="books/plan8.pdf" target="_blank">
+                    <img src="images/book-folder/plan8 pic.png" alt="Plan 8"></a>
+            </div>
+            <div class="info">
+                <h1>Plan 8</h1>
+                <h2>Plan 8: Exploring the Universe - A Graphical Adventure</h2>
+                <p>Discover the mysteries of our universe and find answers to the 8 most intriguing questions about our world.</p>
+            </div>
+        </div>
+
+        <div class="ebook research">
+            <div class="image-container">
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4438932" target="_blank">
+                    <img src="images/book-folder/j1.png" alt="Ranking countries based on their presence in QS top 100"></a>
+            </div>
+            <div class="info">
+                <h1>Ranking countries based on their presence in QS top 100</h1>
+                <h2>The Social Science Research Network (SSRN); May 5, 2023</h2>
+                <p> <b>Research Question:</b> Which country has the maximum number of top universities in the top hundred ranks based on Quacquarelli Symonds World Ranking for 2023?</p>
+            </div>
+        </div>
+
+        <div class="ebook research">
+            <div class="image-container">
+                <a href="https://ijsser.org/more2021.php?id=120" target="_blank">
+                    <img src="images/book-folder/j2.png" alt="Plastic Production and Waste Generation during Covid-19 Pandemic"></a>
+            </div>        
+            <div class="info">
+                <h1>Plastic Production and Waste Generation during Covid-19 Pandemic</h1>
+                <h2>International Journal of Social Science & Economic Research (IJSSER); June, 2022</h2>
+                <p> <b>Research Question:</b> Underline the effect of covid 19 pandemic on plastic production and plastic waste generation.</p>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="script_library.js"></script>
+    </div>
+    
+</body>
+</html>
