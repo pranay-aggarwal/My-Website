@@ -14,6 +14,7 @@
 
 .App .info {
     flex-grow: 1;
+    margin-right: 20px;
 }
 
 .App h1 {
