@@ -445,16 +445,16 @@ form button:hover{
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.5);
   }
-  
+
 .modal-content {
     background-color: #262626;
     opacity: 0.9;
-    margin: 15% auto;
+    margin: 10% auto; 
     padding: 20px;
     border-radius: 10px;
     width: 80%;
-    max-width: 600px;
-    height: 300px;
+    max-width: 800px;
+    height: 500px; 
     overflow-y: scroll;
 }
 
@@ -474,8 +474,8 @@ form button:hover{
 }
 
 .modal-content ul li{
-    font-size: 18px;
-    margin: 10px 20px;
+    font-size: 22px;
+    margin: 15px 20px;
     color: #fff;
 }
   
