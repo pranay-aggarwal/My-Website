@@ -1,19 +1,29 @@
+body{
+    background-color: #000000;
+}
+
 .title {
-    background-color: black;
+
     padding: 1px;
     text-align: left; 
 }
 
 .badge-container {
-    background-color: rgba(0, 0, 0);
-    border: 5px solid black;
+    background-color: rgba(38, 38, 38, 0.4);
+    border: 2px solid rgba(0, 166, 251, 0.2);
     margin: 50px auto;
     width: 1000px;
-    padding: 20px;
+    padding: 30px;
     text-align: left;
     overflow-x: auto;
     border-radius: 25px;
-    
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.badge-container:hover {
+    border-color: rgba(0, 166, 251, 0.4);
+    box-shadow: 0 8px 30px rgba(0, 166, 251, 0.1);
 }
 
 .title h2{
@@ -47,7 +57,7 @@
 
 .badge img:hover {
     filter: brightness(1.2); 
-    box-shadow: 0 0 10px #00a6fb;
+    box-shadow: 0 0 20px rgba(0, 166, 251, 0.7);
 }
 
 .badge img {
@@ -61,46 +71,4 @@
     font-size: 14px;
     margin-top: 10px;
 
-}
-
-
-#languages{
-    padding: 10px 0;
-}
-
-.lang-box{
-    padding: 10px 10%;
-}
-
-.lang-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-gap: 30px;
-    margin-top: 50px;
-}
-
-.lang-list div{
-    background: #262626;
-    padding: 15px;
-    font-size: 15px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition: background 0.5s, transform 0.5s;
-}
-
-.lang-list div img{
-    width: 30px;
-    margin-bottom: 20px;
-}
-
-.lang-list div h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-
-.lang-list div:hover{
-    color: #00a6fb;
-    transform: translateY(-10px);
 }

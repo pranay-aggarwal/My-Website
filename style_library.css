@@ -1,13 +1,26 @@
 .ebook {
     display: flex;
     align-items: center;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
+    padding: 25px;
+    background: rgba(38, 38, 38, 0.4);
+    border-radius: 15px;
+    border: 2px solid rgba(0, 166, 251, 0.2);
+    transition: all 0.3s ease;
+}
+
+.ebook:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 166, 251, 0.2);
+    border-color: rgba(0, 166, 251, 0.4);
 }
 
 .ebook img {
     max-width: 200px;
     margin-right: 40px;
-    border: 1px solid #00a6fb; 
+    border: 2px solid rgba(0, 166, 251, 0.4);
+    border-radius: 10px;
+    transition: all 0.3s ease;
 }
 
 .ebook .info {
@@ -47,11 +60,20 @@
     padding: 10px;
     font-size: 18px;
     border-radius: 10px;
-    background: #262626;
+    background: rgba(38, 38, 38, 0.6);
     color: #fff;
+    border: 2px solid rgba(0, 166, 251, 0.2);
+    transition: all 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus {
+    outline: none;
+    border-color: rgba(0, 166, 251, 0.5);
+    box-shadow: 0 0 15px rgba(0, 166, 251, 0.3);
 }
 
 .image-container img:hover {
     filter: brightness(1.2); 
-    box-shadow: 0 0 10px #00a6fb;
+    box-shadow: 0 0 20px rgba(0, 166, 251, 0.7);
+    transform: scale(1.05);
 }

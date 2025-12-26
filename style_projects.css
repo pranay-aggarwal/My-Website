@@ -3,12 +3,32 @@
     align-items: center;
     margin-bottom: 30px;
     margin: 50px 0px;
+    padding: 30px;
+    background: rgba(38, 38, 38, 0.4);
+    border-radius: 15px;
+    border: 1px solid rgba(0, 166, 251, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.App:hover {
+    border-color: rgba(0, 166, 251, 0.3);
+    box-shadow: 0 8px 25px rgba(0, 166, 251, 0.15);
+    transform: translateY(-5px);
 }
 
 .App img {
     max-width: 200px;
     margin-right: 20px;
     border: 2.5px solid #0582ca;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.App:hover img {
+    border-color: #00a6fb;
+    box-shadow: 0 0 20px rgba(0, 166, 251, 0.5);
+    transform: scale(1.05);
 }
 
 
@@ -62,11 +82,12 @@
 .App .image-container a:hover {
     filter: brightness(1.2);
     color: #0582ca;
+    text-shadow: 0 0 10px rgba(0, 166, 251, 0.5);
 }
 
 .App .image-container img:hover {
     filter: brightness(1.2); 
-    box-shadow: 0 0 10px #00a6fb;
+    box-shadow: 0 0 20px rgba(0, 166, 251, 0.7);
 }
 
 
